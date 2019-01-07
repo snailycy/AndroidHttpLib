@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dn_server_error">伺服器開小差了，請稍後再試!</string>
+    <string name="dn_download_failed">下載失敗！</string>
+    <string name="dn_upload_failed">上傳失敗！</string>
+    <string name="dn_no_internet">當前沒有網路可以訪問</string>
+</resources>

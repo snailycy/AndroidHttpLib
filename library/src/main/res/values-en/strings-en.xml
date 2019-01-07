@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dn_server_error">The server is not in service, please try again later!</string>
+    <string name="dn_download_failed">Download failed!</string>
+    <string name="dn_upload_failed">Upload failed！</string>
+    <string name="dn_no_internet">There is no network available currently</string>
+</resources>
