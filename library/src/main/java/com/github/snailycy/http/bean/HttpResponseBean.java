@@ -9,10 +9,18 @@ import java.io.Serializable;
  */
 
 public class HttpResponseBean implements Serializable {
+    /**
+     * api code
+     */
     private int code;
+    /**
+     * api 业务成功下返回的数据
+     */
     private JsonElement data;
-    private String errorCode;
-    private JsonElement message;
+    /**
+     * api 业务异常下返回的数据
+     */
+    private JsonElement error;
 
     public int getCode() {
         return code;
@@ -30,19 +38,11 @@ public class HttpResponseBean implements Serializable {
         this.data = data;
     }
 
-    public String getErrorCode() {
-        return errorCode;
+    public JsonElement getError() {
+        return error;
     }
 
-    public void setErrorCode(String errorCode) {
-        this.errorCode = errorCode;
-    }
-
-    public JsonElement getMessage() {
-        return message;
-    }
-
-    public void setMessage(JsonElement message) {
-        this.message = message;
+    public void setError(JsonElement error) {
+        this.error = error;
     }
 }

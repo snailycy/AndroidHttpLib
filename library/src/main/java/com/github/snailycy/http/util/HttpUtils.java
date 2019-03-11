@@ -181,9 +181,9 @@ public class HttpUtils {
                 ParameterizedType errorPT = (ParameterizedType) genericInterfaces[1];
                 Type errorType = $Gson$Types.canonicalize(errorPT.getActualTypeArguments()[0]);
                 if ("class java.lang.String".equalsIgnoreCase(errorType.toString())) {
-                    httpRequestCallback.onError((ERROR) httpResponseBean.getMessage().toString());
+                    httpRequestCallback.onError((ERROR) httpResponseBean.getError().toString());
                 } else {
-                    httpRequestCallback.onError((ERROR) GSON.fromJson(httpResponseBean.getMessage(), errorType));
+                    httpRequestCallback.onError((ERROR) GSON.fromJson(httpResponseBean.getError(), errorType));
                 }
             }
         } catch (Throwable t) {

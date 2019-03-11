@@ -29,7 +29,7 @@ public class SampleActivity extends Activity {
         params.put("testparams", "testparams");
 
         HttpUtils.getInstance(this)
-                .setHost("http://119.29.115.76/")
+                .setHost("http://192.168.31.82/")
                 .setPath("applogin")
                 .addHeaders(headers)
                 .addParams(params)
